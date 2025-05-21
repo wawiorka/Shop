@@ -7,3 +7,5 @@ from .models import Product
 @admin.register(Product)
 class PostAdmin(admin.ModelAdmin):
     list_display = ("name", "price", "stock")
+    search_fields = ("name",)
+    ordering = ("name", "price", "stock")
