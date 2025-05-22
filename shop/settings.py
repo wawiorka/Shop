@@ -32,8 +32,8 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     'django.contrib.admin',
-    'django.contrib.auth',
-    'django.contrib.contenttypes',
+    'django.contrib.auth',  # Система аутентификации
+    'django.contrib.contenttypes',  # Cистема типов контента
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
@@ -89,7 +89,7 @@ WSGI_APPLICATION = 'shop.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'e_catalog',
+        'NAME': 'e_catalog2',
         'USER': 'postgres',
         'PASSWORD': '3618ann',
         'HOST': '127.0.0.1',
